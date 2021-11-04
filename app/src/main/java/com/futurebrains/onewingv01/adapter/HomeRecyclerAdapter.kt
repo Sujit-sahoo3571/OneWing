@@ -11,7 +11,7 @@ import com.futurebrains.onewingv01.R
 import com.futurebrains.onewingv01.model.AllCategory
 import com.futurebrains.onewingv01.model.CategoryItems
 
-class HomeRecyclerAdapter(val context: Context?, val allCategory: List<AllCategory>) :
+class HomeRecyclerAdapter(val context: Context?, val allCategory: ArrayList<AllCategory>) :
     RecyclerView.Adapter<HomeRecyclerAdapter.HomeViewHolder>() {
 
     private val list = allCategory
@@ -40,8 +40,10 @@ class HomeRecyclerAdapter(val context: Context?, val allCategory: List<AllCatego
 
     override fun getItemCount(): Int = list.size
 
-    private fun setSubHomeItems(recyclerView: RecyclerView, categoryItems: List<CategoryItems>) {
-        val itemRecyclerAdapter = CategoryItemAdapter(context, categoryItems)
+    private fun setSubHomeItems(recyclerView: RecyclerView, categoryItems: ArrayList<CategoryItems>) {
+        val itemRecyclerAdapter = CategoryItemAdapter(context,
+            categoryItems
+        )
         recyclerView.layoutManager = LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
         recyclerView.adapter = itemRecyclerAdapter
     }

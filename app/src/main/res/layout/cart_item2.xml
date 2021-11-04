@@ -3,13 +3,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_marginStart="16dp"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_marginStart="16dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -17,8 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-
-            android:id="@+id/iv_item_image1"
+            android:id="@+id/iv_item_image2"
             android:layout_width="180dp"
             android:layout_height="100dp"
             android:scaleType="fitXY"
@@ -28,18 +28,19 @@
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/tv_item_name1"
+            android:id="@+id/tv_item_name2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_bold"
-            android:textSize="18sp"
-            android:text="itemName"
-            app:layout_constraintTop_toBottomOf="@id/iv_item_image1"
-            app:layout_constraintEnd_toEndOf="parent"
             android:gravity="center"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:text="ItemName"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_item_image2" />
+
         <TextView
-            android:id="@+id/tv_item_price1"
+            android:id="@+id/tv_item_price2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_bold"
@@ -48,7 +49,7 @@
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_item_name1" />
+            app:layout_constraintTop_toBottomOf="@id/tv_item_name2" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
