@@ -1,6 +1,7 @@
 package com.futurebrains.onewingv01.ui.fragment
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +13,7 @@ import com.futurebrains.onewingv01.adapter.CategoryItemAdapter
 import com.futurebrains.onewingv01.adapter.HomeRecyclerAdapter
 import com.futurebrains.onewingv01.model.AllCategory
 import com.futurebrains.onewingv01.model.CategoryItems
-
+private val TAG = "Home Fragment"
 class HomeFragment : Fragment() {
 
     private lateinit var homeRecyclerView: RecyclerView
@@ -22,6 +23,7 @@ class HomeFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.i(TAG, "onCreate: ")
 
         val categoryItemList: ArrayList<CategoryItems> = ArrayList()
         categoryItemList.add(
