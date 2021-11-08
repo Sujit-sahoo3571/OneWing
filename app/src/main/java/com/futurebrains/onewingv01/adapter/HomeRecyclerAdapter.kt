@@ -11,14 +11,14 @@ import com.futurebrains.onewingv01.R
 import com.futurebrains.onewingv01.model.AllCategory
 import com.futurebrains.onewingv01.model.CategoryItems
 
-class HomeRecyclerAdapter(val context: Context?, val allCategory: ArrayList<AllCategory>) :
+class HomeRecyclerAdapter(val context: Context?, allCategory: ArrayList<AllCategory>) :
     RecyclerView.Adapter<HomeRecyclerAdapter.HomeViewHolder>() {
 
     private val list = allCategory
 
     class HomeViewHolder(items: View) : RecyclerView.ViewHolder(items) {
-        lateinit var subTitle: TextView
-        lateinit var itemRecycler: RecyclerView
+         var subTitle: TextView
+         var itemRecycler: RecyclerView
 
         init {
             subTitle = items.findViewById(R.id.tv_home_subcategory)

@@ -12,10 +12,11 @@ import com.futurebrains.onewingv01.model.CategoryItems
 
 class CategoryItemAdapter(
     private val contex: Context?,
-    private val categoryItems: ArrayList<CategoryItems>
+    categoryItems: ArrayList<CategoryItems>
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private val list = categoryItems
+    private val RUPEES = "Rs. "
 
     companion object {
         const val VIEW_TYPE_ONE = 1
@@ -23,9 +24,9 @@ class CategoryItemAdapter(
     }
 
     inner class View1ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        lateinit var itemImage: ImageView
-        lateinit var itemName: TextView
-        lateinit var itemPrice: TextView
+        var itemImage: ImageView
+        var itemName: TextView
+        var itemPrice: TextView
 
         init {
             itemImage = itemView.findViewById(R.id.iv_item_image1)
@@ -36,7 +37,10 @@ class CategoryItemAdapter(
         fun bind(position: Int) {
             val recyclerViewModel = list[position]
             itemName.text = recyclerViewModel.itemName
-            itemPrice.text = recyclerViewModel.itemPrice.toString()
+            val price = recyclerViewModel.itemPrice.toString()
+//            itemPrice.text = recyclerViewModel.itemPrice.toString()
+            val str_price = RUPEES + price
+            itemPrice.text = str_price
             itemImage.setImageResource(recyclerViewModel.imageUrl)
 
         }
@@ -44,9 +48,9 @@ class CategoryItemAdapter(
     }
 
     inner class View2ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        lateinit var itemImage: ImageView
-        lateinit var itemName: TextView
-        lateinit var itemPrice: TextView
+        var itemImage: ImageView
+        var itemName: TextView
+        var itemPrice: TextView
 
         init {
             itemImage = itemView.findViewById(R.id.iv_item_image2)
@@ -57,7 +61,10 @@ class CategoryItemAdapter(
         fun bind(position: Int) {
             val recyclerViewModel = list[position]
             itemName.text = recyclerViewModel.itemName
-            itemPrice.text = recyclerViewModel.itemPrice.toString()
+//            itemPrice.text = recyclerViewModel.itemPrice.toString()
+            val price = recyclerViewModel.itemPrice.toString()
+            val str_price = RUPEES + price
+            itemPrice.text = str_price
             itemImage.setImageResource(recyclerViewModel.imageUrl)
 
         }
@@ -85,6 +92,6 @@ class CategoryItemAdapter(
     override fun getItemCount(): Int = list.size
 
     override fun getItemViewType(position: Int): Int {
-        return  list[position].viewType
+        return list[position].viewType
     }
 }

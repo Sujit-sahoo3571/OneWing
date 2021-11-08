@@ -29,7 +29,7 @@ class HomeFragment : Fragment() {
         categoryItemList.add(
             CategoryItems(
                 CategoryItemAdapter.VIEW_TYPE_ONE,
-                "VEG Masala",
+                "IDILE DOSHA",
                 700,
                 R.drawable.food1
             )
@@ -37,7 +37,7 @@ class HomeFragment : Fragment() {
         categoryItemList.add(
             CategoryItems(
                 CategoryItemAdapter.VIEW_TYPE_ONE,
-                "VEG Masala",
+                "IDILE DOSHA",
                 700,
                 R.drawable.food1
             )
@@ -45,7 +45,7 @@ class HomeFragment : Fragment() {
         categoryItemList.add(
             CategoryItems(
                 CategoryItemAdapter.VIEW_TYPE_ONE,
-                "VEG Masala",
+                "IDILE DOSHA",
                 700,
                 R.drawable.food1
             )
@@ -53,7 +53,7 @@ class HomeFragment : Fragment() {
         categoryItemList.add(
             CategoryItems(
                 CategoryItemAdapter.VIEW_TYPE_ONE,
-                "VEG Masala",
+                "IDILE DOSHA",
                 700,
                 R.drawable.food1
             )
@@ -63,37 +63,37 @@ class HomeFragment : Fragment() {
         val categoryItemList1: ArrayList<CategoryItems> = ArrayList()
         categoryItemList1.add( CategoryItems(
             CategoryItemAdapter.VIEW_TYPE_TWO,
-            "VEG Pakoda",
+            "CHAOMIN ",
             800,
             R.drawable.food2
         ))
         categoryItemList1.add( CategoryItems(
             CategoryItemAdapter.VIEW_TYPE_TWO,
-            "VEG Pakoda",
+            "CHAOMIN ",
             800,
             R.drawable.food2
         ))
         categoryItemList1.add( CategoryItems(
             CategoryItemAdapter.VIEW_TYPE_TWO,
-            "VEG Pakoda",
+            "CHAOMIN ",
             800,
             R.drawable.food2
         ))
         categoryItemList1.add( CategoryItems(
             CategoryItemAdapter.VIEW_TYPE_TWO,
-            "VEG Pakoda",
+            "CHAOMIN ",
             800,
             R.drawable.food2
         ))
         categoryItemList1.add( CategoryItems(
             CategoryItemAdapter.VIEW_TYPE_TWO,
-            "VEG Pakoda",
+            "CHAOMIN ",
             800,
             R.drawable.food2
         ))
         categoryItemList1.add( CategoryItems(
             CategoryItemAdapter.VIEW_TYPE_TWO,
-            "VEG Pakoda",
+            "CHAOMIN ",
             800,
             R.drawable.food2
         ))
@@ -103,31 +103,31 @@ class HomeFragment : Fragment() {
         val categoryItemList2: ArrayList<CategoryItems> = ArrayList()
         categoryItemList2.add( CategoryItems(
             CategoryItemAdapter.VIEW_TYPE_ONE,
-            "VEG Paovaji",
+            "BURGER KING",
             500,
             R.drawable.food3
         ))
         categoryItemList2.add( CategoryItems(
             CategoryItemAdapter.VIEW_TYPE_ONE,
-            "VEG Paovaji",
+            "BURGER KING",
             500,
             R.drawable.food3
         ))
         categoryItemList2.add( CategoryItems(
             CategoryItemAdapter.VIEW_TYPE_ONE,
-            "VEG Paovaji",
+            "BURGER KING",
             500,
             R.drawable.food3
         ))
         categoryItemList2.add( CategoryItems(
             CategoryItemAdapter.VIEW_TYPE_ONE,
-            "VEG Paovaji",
+            "BURGER KING",
             500,
             R.drawable.food3
         ))
         categoryItemList2.add( CategoryItems(
             CategoryItemAdapter.VIEW_TYPE_ONE,
-            "VEG Paovaji",
+            "BURGER KING",
             500,
             R.drawable.food3
         ))
@@ -137,31 +137,31 @@ class HomeFragment : Fragment() {
         val categoryItemList3: ArrayList<CategoryItems> = ArrayList()
         categoryItemList3.add( CategoryItems(
             CategoryItemAdapter.VIEW_TYPE_TWO,
-            "VEG dumbiriany",
+            "SALAD ",
             900,
             R.drawable.food4
         ))
          categoryItemList3.add( CategoryItems(
             CategoryItemAdapter.VIEW_TYPE_TWO,
-            "VEG dumbiriany",
+            "SALAD ",
             900,
             R.drawable.food4
         ))
          categoryItemList3.add( CategoryItems(
             CategoryItemAdapter.VIEW_TYPE_TWO,
-            "VEG dumbiriany",
+            "SALAD ",
             900,
             R.drawable.food4
         ))
          categoryItemList3.add( CategoryItems(
             CategoryItemAdapter.VIEW_TYPE_TWO,
-            "VEG dumbiriany",
+            "SALAD ",
             900,
             R.drawable.food4
         ))
          categoryItemList3.add( CategoryItems(
             CategoryItemAdapter.VIEW_TYPE_TWO,
-            "VEG dumbiriany",
+            "SALAD ",
             900,
             R.drawable.food4
         ))
